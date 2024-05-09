@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'echo "Building..."'
                 sh 'ls -al'
+                sh 'echo "echo "Hello, World!"" > deploy.sh'
             }
         }
         stage('Test') {
